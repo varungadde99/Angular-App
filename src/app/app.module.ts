@@ -14,8 +14,10 @@ import { MatInputModule } from "@angular/material/input";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatSelectModule } from "@angular/material/select";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { FormsModule } from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms";
+import { AppRoutingModule } from "./app-routing/app-routing.module";
 
 import { AppComponent } from "./app.component";
 import { MenuComponent } from "./menu/menu.component";
@@ -30,8 +32,6 @@ import { LoginComponent } from "./login/login.component";
 import { DishService } from "./services/dish.service";
 import { PromotionService } from "./services/promotion.service";
 import { LeaderService } from "./services/leader.service";
-
-import { AppRoutingModule } from "./app-routing/app-routing.module";
 
 @NgModule({
   declarations: [
@@ -61,6 +61,7 @@ import { AppRoutingModule } from "./app-routing/app-routing.module";
     MatCheckboxModule,
     MatSelectModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
   ],
